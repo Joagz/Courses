@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/pratt_parsing.dir/main.cpp.o -o /home/joagz/Courses/Algorithms/PrattParsing/bin/pratt_parsing  /home/joagz/Courses/Algorithms/PrattParsing/bin/libtoken.a /home/joagz/Courses/Algorithms/PrattParsing/bin/liblexer.a /home/joagz/Courses/Algorithms/PrattParsing/bin/libexpression.a 

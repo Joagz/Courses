@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/joagz/Courses/Algorithms/PrattParsing/bin/liblexer.a CMakeFiles/lexer.dir/lexer/lexer.cpp.o
+/usr/bin/ranlib /home/joagz/Courses/Algorithms/PrattParsing/bin/liblexer.a

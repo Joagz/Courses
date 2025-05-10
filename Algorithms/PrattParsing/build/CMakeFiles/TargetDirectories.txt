@@ -1,0 +1,6 @@
+/home/joagz/Courses/Algorithms/PrattParsing/build/CMakeFiles/pratt_parsing.dir
+/home/joagz/Courses/Algorithms/PrattParsing/build/CMakeFiles/token.dir
+/home/joagz/Courses/Algorithms/PrattParsing/build/CMakeFiles/lexer.dir
+/home/joagz/Courses/Algorithms/PrattParsing/build/CMakeFiles/expression.dir
+/home/joagz/Courses/Algorithms/PrattParsing/build/CMakeFiles/edit_cache.dir
+/home/joagz/Courses/Algorithms/PrattParsing/build/CMakeFiles/rebuild_cache.dir

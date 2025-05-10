@@ -1,0 +1,2 @@
+/usr/bin/ar qc /home/joagz/Courses/Algorithms/PrattParsing/bin/libtoken.a CMakeFiles/token.dir/token/token.cpp.o
+/usr/bin/ranlib /home/joagz/Courses/Algorithms/PrattParsing/bin/libtoken.a
