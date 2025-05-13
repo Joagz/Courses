@@ -1,11 +1,6 @@
 [
 {
   "directory": "/home/joagz/Courses/Algorithms/PrattParsing/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/token.dir/token/token.cpp.o -c /home/joagz/Courses/Algorithms/PrattParsing/token/token.cpp",
-  "file": "/home/joagz/Courses/Algorithms/PrattParsing/token/token.cpp"
-},
-{
-  "directory": "/home/joagz/Courses/Algorithms/PrattParsing/build",
   "command": "/usr/bin/g++   -g -o CMakeFiles/lexer.dir/lexer/lexer.cpp.o -c /home/joagz/Courses/Algorithms/PrattParsing/lexer/lexer.cpp",
   "file": "/home/joagz/Courses/Algorithms/PrattParsing/lexer/lexer.cpp"
 },

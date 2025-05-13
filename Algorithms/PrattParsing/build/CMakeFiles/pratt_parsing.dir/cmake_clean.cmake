@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joagz/Courses/Algorithms/PrattParsing/bin/pratt_parsing"
-  "/home/joagz/Courses/Algorithms/PrattParsing/bin/pratt_parsing.pdb"
+  "../bin/pratt_parsing"
+  "../bin/pratt_parsing.pdb"
   "CMakeFiles/pratt_parsing.dir/main.cpp.o"
   "CMakeFiles/pratt_parsing.dir/main.cpp.o.d"
 )

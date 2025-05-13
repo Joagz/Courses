@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joagz/Courses/Algorithms/PrattParsing/bin/libexpression.a"
-  "/home/joagz/Courses/Algorithms/PrattParsing/bin/libexpression.pdb"
+  "../bin/libexpression.a"
+  "../bin/libexpression.pdb"
   "CMakeFiles/expression.dir/expression/expression.cpp.o"
   "CMakeFiles/expression.dir/expression/expression.cpp.o.d"
 )

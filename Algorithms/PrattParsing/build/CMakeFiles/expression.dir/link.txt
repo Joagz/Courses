@@ -1,2 +1,2 @@
-/usr/bin/ar qc /home/joagz/Courses/Algorithms/PrattParsing/bin/libexpression.a CMakeFiles/expression.dir/expression/expression.cpp.o
-/usr/bin/ranlib /home/joagz/Courses/Algorithms/PrattParsing/bin/libexpression.a
+/usr/bin/ar qc ../bin/libexpression.a CMakeFiles/expression.dir/expression/expression.cpp.o
+/usr/bin/ranlib ../bin/libexpression.a

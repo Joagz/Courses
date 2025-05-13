@@ -31,7 +31,7 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 15,
+				"line" : 14,
 				"parent" : 0
 			}
 		]
@@ -56,10 +56,6 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "token::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 2,
 			"id" : "lexer::@6890427a1f51a3e7e1df"
 		},
 		{
@@ -82,17 +78,12 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/joagz/Courses/Algorithms/PrattParsing/bin/libtoken.a",
+				"fragment" : "../bin/liblexer.a",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/home/joagz/Courses/Algorithms/PrattParsing/bin/liblexer.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/home/joagz/Courses/Algorithms/PrattParsing/bin/libexpression.a",
+				"fragment" : "../bin/libexpression.a",
 				"role" : "libraries"
 			}
 		],

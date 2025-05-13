@@ -9,7 +9,7 @@
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "3.25"
+						"string" : "3.22"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -17,8 +17,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					]
 				}
 			],
@@ -35,8 +34,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					]
 				}
 			],
@@ -45,29 +43,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "expression::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-expression-Debug-9c479d4d0546903b4949.json",
+					"jsonFile" : "target-expression-Debug-03db17c51b1c3c9f0165.json",
 					"name" : "expression",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "lexer::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-lexer-Debug-26cc284c2b962b097427.json",
+					"jsonFile" : "target-lexer-Debug-369a1c9ad08e163458af.json",
 					"name" : "lexer",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "pratt_parsing::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pratt_parsing-Debug-738d1ff3fc21d2238b5b.json",
+					"jsonFile" : "target-pratt_parsing-Debug-2c8f8037e5d5b3f2d84e.json",
 					"name" : "pratt_parsing",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "token::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-token-Debug-5a0aa470f70cca1cf201.json",
-					"name" : "token",
 					"projectIndex" : 0
 				}
 			]
@@ -82,6 +73,6 @@
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 3
 	}
 }

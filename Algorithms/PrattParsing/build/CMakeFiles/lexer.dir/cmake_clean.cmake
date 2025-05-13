@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joagz/Courses/Algorithms/PrattParsing/bin/liblexer.a"
-  "/home/joagz/Courses/Algorithms/PrattParsing/bin/liblexer.pdb"
+  "../bin/liblexer.a"
+  "../bin/liblexer.pdb"
   "CMakeFiles/lexer.dir/lexer/lexer.cpp.o"
   "CMakeFiles/lexer.dir/lexer/lexer.cpp.o.d"
 )

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/joagz/Courses/Algorithms/PrattParsing/bin/libtoken.a"
-  "/home/joagz/Courses/Algorithms/PrattParsing/bin/libtoken.pdb"
+  "../bin/libtoken.a"
+  "../bin/libtoken.pdb"
   "CMakeFiles/token.dir/token/token.cpp.o"
   "CMakeFiles/token.dir/token/token.cpp.o.d"
 )
