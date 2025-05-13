@@ -11,22 +11,22 @@ namespace lexer
     class Lexer
     {
     private:
-        std::vector<expression::Expression> tokens;
-        std::vector<expression::Expression> tokenize(const char *str);
+        std::vector<expression::Expression*> tokens;
+        std::vector<expression::Expression*> tokenize(const char *str);
+
+        expression::Expression* next();
+
+        expression::Expression* peek();
 
     public:
-    Lexer(const char *expression_str)
-    {
+        Lexer(const char *expression_str)
+        {
             this->tokens = tokenize(expression_str);
             std::reverse(this->tokens.begin(), this->tokens.end());
         };
         ~Lexer() = default;
 
-        expression::Expression next();
-
-        expression::Expression peek();
-
-        expression::Expression parse_expression(int min_bp);
+        expression::Expression *parse_expression(int min_bp);
     };
 
 } // namespace lexer

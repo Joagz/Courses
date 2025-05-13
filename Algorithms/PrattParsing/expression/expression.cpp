@@ -2,26 +2,37 @@
 
 namespace expression
 {
-    int *Expression::get_infix_bp()
+
+    std::tuple<int, int> Expression::get_infix_bp()
     {
+        Token tok;
+
         if (this->type == ExpressionType::Single)
         {
-            return nullptr;
+            tok = this->token;
+        }
+        else
+        {
+            tok = this->expression.op;
         }
 
-        return this->token.precedence;
+        return {tok.lhs_precedence, tok.rhs_precedence};
     }
 
     TokenType Expression::get_type()
     {
-        if (this->type != ExpressionType::Single)
+        if (this->type == ExpressionType::Single)
         {
-            return Eof;
+            return this->token.type;
         }
-        return this->token.type;
-    };
+        else
+        {
+            return this->expression.op.type; // Binary always has an operator
+        }
+    }
 
-    char Expression::get_value() {
+    char Expression::get_value()
+    {
         return this->token.value;
     }
 } // namespace expression

@@ -1,10 +1,12 @@
 #ifndef __EXRESSION_H__
 #define __EXRESSION_H__
 
+#include <tuple>
 #include <iostream>
 
 namespace expression
 {
+    class Expression; 
 
     enum ExpressionType
     {
@@ -19,23 +21,24 @@ namespace expression
         Eof
     };
 
+    typedef struct
+    {
+        char value;
+        TokenType type;
+        int lhs_precedence;
+        int rhs_precedence;
+    } Token;
+
+    typedef struct
+    {
+        Token op;
+        Expression* lhs;
+        Expression* rhs;
+    } BinaryExpression;
+
     class Expression
     {
     private:
-        typedef struct
-        {
-            char op;
-            char lhs;
-            char rhs;
-        } BinaryExpression;
-
-        typedef struct
-        {
-            char value;
-            TokenType type;
-            int precedence[2];
-        } Token;
-
         ExpressionType type;
 
         union
@@ -45,15 +48,16 @@ namespace expression
         };
 
     public:
-        Expression(/* args */) {
-            this->type=Single;
-            this->token.precedence[0] = 0;
-            this->token.precedence[1] = 0;
-            this->token.type=Eof;
-            this->token.value='\0';
+        Expression(/* args */)
+        {
+            this->type = Single;
+            this->token.lhs_precedence = 0;
+            this->token.rhs_precedence = 0;
+            this->token.type = Eof;
+            this->token.value = '\0';
         };
 
-        Expression(char op, char lhs, char rhs)
+        Expression(Token op, Expression* lhs, Expression* rhs)
         {
             this->type = ExpressionType::Binary;
             BinaryExpression b;
@@ -66,8 +70,7 @@ namespace expression
         {
             this->type = ExpressionType::Single;
             this->token.value = value;
-
-            if (isalnum(value))
+            if (isdigit(value) || isalpha(value))
             {
                 this->token.type = Atom;
             }
@@ -77,23 +80,23 @@ namespace expression
                 switch (value)
                 {
                 case '-':
-                    this->token.precedence[0] = 1;
-                    this->token.precedence[1] = 2;
+                    this->token.lhs_precedence = 1;
+                    this->token.rhs_precedence = 2;
                     break;
 
                 case '+':
-                    this->token.precedence[0] = 1;
-                    this->token.precedence[1] = 2;
+                    this->token.lhs_precedence = 1;
+                    this->token.rhs_precedence = 2;
                     break;
 
                 case '*':
-                    this->token.precedence[0] = 3;
-                    this->token.precedence[1] = 4;
+                    this->token.lhs_precedence = 3;
+                    this->token.rhs_precedence = 4;
                     break;
 
                 case '/':
-                    this->token.precedence[0] = 3;
-                    this->token.precedence[1] = 4;
+                    this->token.lhs_precedence = 3;
+                    this->token.rhs_precedence = 4;
                     break;
 
                 default:
@@ -102,13 +105,21 @@ namespace expression
                     break;
                 }
             }
-
-            this->token.type = TokenType::Atom;
         };
         ~Expression() = default;
 
-        int *get_infix_bp();
+        std::tuple<int, int> get_infix_bp();
         char get_value();
+
+        Token get_token()
+        {
+            return this->token;
+        }
+
+        BinaryExpression get_expression() {
+            return this->expression;
+        }
+
         TokenType get_type();
     };
 
