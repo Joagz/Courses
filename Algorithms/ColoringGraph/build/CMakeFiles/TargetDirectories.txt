@@ -1,0 +1,3 @@
+/home/joagz/Desktop/Courses/Algorithms/ColoringGraph/build/CMakeFiles/coloring_graph.dir
+/home/joagz/Desktop/Courses/Algorithms/ColoringGraph/build/CMakeFiles/edit_cache.dir
+/home/joagz/Desktop/Courses/Algorithms/ColoringGraph/build/CMakeFiles/rebuild_cache.dir
